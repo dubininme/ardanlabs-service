@@ -101,3 +101,6 @@ sales:
 		--build-arg BUILD_TAG=$(VERSION) \
 		--build-arg BUILD_DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ") \
 		.
+
+curl-test: 
+	curl -il -X GET http://localhost:3000/test
